@@ -1,14 +1,13 @@
-
 var express = require("express"); 
 const path = require('path');
 const cfenv = require('cfenv');
 
 var app  =  express(); 
 var appEnv = cfenv.getAppEnv();
-var portNumber = process.env.port || 3000;
 var url = process.env.url
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 9980))
 app.use(express.static(__dirname + '/images'))
+
 
 /*
 app.get("/getCall", function(req,res){ 
