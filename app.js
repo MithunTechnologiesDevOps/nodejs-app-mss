@@ -21,7 +21,7 @@ console.log(__dirname+"/images/mithunlogo.jpg");
 */
 app.get('/mithuntechnologies', function(request, response) {
     //response.send("<h2><center>Welcome to Node JS app</h2>");
-    res.set("Content-Type","text/html");
+    response.set("Content-Type","text/html");
     response.write("<h2><center><u>Sameple Node JS  Application </u></center></h2>");
 	
     response.write("<h2><center>Welcome to  Mithun Technologies. Please Contact +91-9980923226  +91-9900012028 for more information or send an email to devopstrainingblr@gmail.com <center></h2>" );
